@@ -1,0 +1,78 @@
+# AI Context and Rules folders
+.ai/
+ai-context/
+ai-rules/
+ai-tracker/
+.claude/
+claude-context/
+prompts/
+.prompts/
+
+# AI-related files
+*.ai.md
+*-ai-context.md
+*-ai-rules.md
+ai-*.txt
+context-*.txt
+
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+vendor/
+
+# Flutter/Dart specific
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+flutter_*.log
+*.class
+*.lock
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+credentials.json
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# OS specific
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~.nib
