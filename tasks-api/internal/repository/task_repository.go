@@ -6,7 +6,6 @@ import (
 	"tasks-api/internal/domain"
 )
 
-// TaskRepository defines the interface (similar to abstract repository in Flutter)
 type TaskRepository interface {
 	Create(task *domain.Task) error
 	GetAll() ([]*domain.Task, error)
@@ -15,13 +14,11 @@ type TaskRepository interface {
 	Delete(id string) error
 }
 
-// InMemoryTaskRepository implements TaskRepository using in-memory storage
 type InMemoryTaskRepository struct {
 	tasks map[string]*domain.Task
-	mu    sync.RWMutex // mutex for thread-safe operations
+	mu    sync.RWMutex
 }
 
-// NewInMemoryTaskRepository creates a new in-memory repository
 func NewInMemoryTaskRepository() TaskRepository {
 	return &InMemoryTaskRepository{
 		tasks: make(map[string]*domain.Task),
