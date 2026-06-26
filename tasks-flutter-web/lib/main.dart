@@ -7,7 +7,7 @@ import 'package:tasks_flutter_web/presentation/pages/tasks_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Setup dependency injection (like your DI setup in main.dart)
+  // Setup dependency injection
   await setupDependencies();
 
   runApp(const MyApp());
